@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="returnProcessNode" prefHeight="510.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carRentalServiceCmjd102Udeeka.controller.ReturnProcessFormController">
+   <children>
+      <Label layoutX="286.0" layoutY="14.0" text="Return Process" textFill="#0a92bf">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="62.0" text="Customer ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="157.0" layoutY="59.0" onAction="#txtCustomerIdSearchOnAction" prefHeight="26.0" prefWidth="175.0" promptText="Enter Customer ID" />
+      <Label layoutX="407.0" layoutY="62.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerName" layoutX="550.0" layoutY="59.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="14.0" layoutY="106.0" text="Vehicle ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleId" layoutX="157.0" layoutY="103.0" onAction="#txtVehicleIdSearchOnAction" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="404.0" layoutY="106.0" text="Vehicle Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleName" layoutX="550.0" layoutY="103.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="11.0" layoutY="314.0" text="Total Payment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTotalPayment" layoutX="157.0" layoutY="311.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="404.0" layoutY="314.0" text="Balance Payment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBalancePayment" layoutX="550.0" layoutY="311.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="11.0" layoutY="366.0" text="Refundable Deposit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRefundableDeposit" layoutX="157.0" layoutY="363.0" prefHeight="26.0" prefWidth="175.0" />
+      <Button layoutX="670.0" layoutY="393.0" mnemonicParsing="false" onAction="#buttonDoneOnAction" style="-fx-background-color: lime;" text="Done">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="602.0" layoutY="393.0" mnemonicParsing="false" onAction="#buttonBackOnAction" style="-fx-background-color: black;" text="Back" textFill="#f7f3f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="528.0" layoutY="393.0" mnemonicParsing="false" onAction="#buttonClearFieldsOnAction" style="-fx-background-color: gold;" text="Clear">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="404.0" layoutY="153.0" text="Vehicle Return date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateOfReturn" layoutX="550.0" layoutY="150.0" />
+      <Button layoutX="645.0" layoutY="250.0" mnemonicParsing="false" onAction="#buttonCalculateOnAction" style="-fx-background-color: red;" text="Calculate">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutY="289.0" prefHeight="12.0" prefWidth="749.0" />
+      <Label layoutX="404.0" layoutY="200.0" text="Rent Duration">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumberOfRentDays" layoutX="550.0" layoutY="197.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="11.0" layoutY="245.0" text="Advance Payment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAdvancePayment" layoutX="157.0" layoutY="241.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="14.0" layoutY="152.0" text="Rent Start Date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDateOfRentStart" layoutX="157.0" layoutY="150.0" prefHeight="26.0" prefWidth="175.0" />
+      <Label layoutX="14.0" layoutY="200.0" text="Rent Per Day">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtRentPerDay" layoutX="157.0" layoutY="197.0" prefHeight="26.0" prefWidth="175.0" />
+   </children>
+</AnchorPane>
