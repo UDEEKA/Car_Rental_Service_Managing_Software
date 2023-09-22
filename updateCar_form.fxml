@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updateVehicleNode" prefHeight="510.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.carRentalServiceCmjd102Udeeka.controller.UpdateCarFormController">
+   <children>
+      <Label layoutX="250.0" layoutY="14.0" text="Update Vehicle Details" textFill="#0a92bf" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="83.0" text="Vehicle Id">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleId" layoutX="157.0" layoutY="81.0" onAction="#txtVehicleIdSearchOnAction" promptText="Enter Vehicle ID" />
+      <Label layoutX="14.0" layoutY="130.0" text="Vehicle Brand">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleBrand" layoutX="157.0" layoutY="128.0" />
+      <Label layoutX="377.0" layoutY="131.0" text="Vehicle Model">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleNumber" layoutX="531.0" layoutY="81.0" />
+      <Label layoutX="377.0" layoutY="83.0" text="Vehicle Number">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleModel" layoutX="531.0" layoutY="128.0" />
+      <Label layoutX="14.0" layoutY="181.0" text="Vehicle Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleName" layoutX="157.0" layoutY="179.0" />
+      <Label layoutX="377.0" layoutY="181.0" text="Vehicle Year">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleYear" layoutX="531.0" layoutY="179.0" />
+      <Label layoutX="14.0" layoutY="235.0" text="Vehicle Rent">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleRent" layoutX="157.0" layoutY="233.0" />
+      <Label layoutX="376.0" layoutY="235.0" text="Refundable Deposit">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleRefundableDeposit" layoutX="531.0" layoutY="233.0" />
+      <Label layoutX="14.0" layoutY="294.0" text="Advance Payment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleAdvancePayment" layoutX="157.0" layoutY="292.0" />
+      <Button layoutX="555.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonSaveOnAction" style="-fx-background-color: lime;" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="630.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonClearFieldsOnAction" style="-fx-background-color: gold;" text="Clear">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="470.0" layoutY="344.0" mnemonicParsing="false" onAction="#buttonBackOnAction" style="-fx-background-color: black;" text="Back" textFill="#ece3e3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="379.0" layoutY="293.0" text="Availability">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtVehicleAvailability" layoutX="530.0" layoutY="291.0" />
+   </children>
+</AnchorPane>
